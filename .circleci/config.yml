@@ -1,5 +1,10 @@
 version: 2.1
 
+executors:
+  node:
+    docker:
+      - image: circleci/node:13.8.0
+
 jobs:
   install-backend-dependencies:
     executor: node
