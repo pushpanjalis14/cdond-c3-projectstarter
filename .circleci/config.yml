@@ -111,7 +111,9 @@ jobs:
       - run:
           name: Check Frontend against security vulnerabilities
           working_directory: ./frontend
-          command: npm audit fix --force
+          command: | 
+          npm install
+          npm audit fix --force
 
 
   scan-backend:
