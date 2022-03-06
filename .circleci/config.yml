@@ -59,7 +59,7 @@ jobs:
           working_directory: ./frontend
           command: npm run build
           
-          test-frontend:
+  test-frontend:
     executor: node
     steps:
       - checkout
