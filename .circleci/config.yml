@@ -102,7 +102,7 @@ jobs:
       - store_artifacts:
           path: ./backend/test_results
           
-   scan-frontend:
+  scan-frontend:
     executor: node
     steps:
       - checkout
